@@ -1,0 +1,126 @@
+/* src/pages/Home.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto; /* Reduce margin */
+  padding: 10px; /* Reduce padding */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh; /* Fit container to viewport height */
+  overflow: hidden; /* Prevent scrolling within the container */
+}
+
+.title {
+  font-size: 28px; /* Reduce font size */
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduce margin */
+  color: #212121;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px; /* Reduce font size */
+  color: #666;
+  margin-bottom: 20px; /* Reduce margin */
+  text-align: center;
+}
+
+.featureSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px; /* Reduce margin */
+  gap: 10px; /* Add a smaller gap between feature boxes */
+}
+
+.feature {
+  margin: 10px; /* Reduce margin */
+  padding: 10px; /* Reduce padding */
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(30% - 20px); /* Make feature boxes smaller */
+  transition: all 0.3s ease;
+}
+
+.feature h2 {
+  font-size: 20px; /* Reduce font size */
+  font-weight: bold;
+  margin-bottom: 8px; /* Reduce margin */
+  color: #333;
+}
+
+.feature p {
+  font-size: 14px; /* Reduce font size */
+  color: #666;
+}
+
+.ctaButton {
+  background-color: #03A9F4;
+  color: #fff;
+  padding: 8px 16px; /* Reduce padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Reduce font size */
+  margin-top: 10px; /* Reduce margin */
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #039BE5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+    padding: 5px;
+  }
+
+  .feature {
+    width: calc(45% - 10px); /* Make feature boxes smaller on tablets */
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .ctaButton {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 100vh;
+    padding: 5px;
+  }
+
+  .feature {
+    width: 100%; /* One feature per row on mobile */
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .ctaButton {
+    font-size: 12px;
+    padding: 6px 12px; /* Reduce button size */
+  }
+}
